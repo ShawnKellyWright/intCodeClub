@@ -6,10 +6,10 @@ small companies.
 
 Thanks, 
 Shawn Wright - Co-Founder 
-United States
+(United States)
 
 Vepa Orazov - Co-Founder 
-Turkmenistan 
+(Turkmenistan) 
 
 Aymane Boukrouh -
-Morroco
+(Morroco)
