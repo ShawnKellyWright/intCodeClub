@@ -11,5 +11,5 @@ United States
 Vepa Orazov - Co-Founder 
 Turkmenistan 
 
-Aymane Boukrouh 
+Aymane Boukrouh -
 Morroco
