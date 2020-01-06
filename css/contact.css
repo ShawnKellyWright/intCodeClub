@@ -1,11 +1,16 @@
-/* Following styling for background */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* following is background image */
 body {
-  background: url('../images/hands_gray_bckgrnd_vector.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #E5E6EB ;
+ background-image: url("../images/blueCrystal.jpg");
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-color: #ffffff;
 }
 
 /* Following is nav menu styling 12-24-19 12:45pm sw */
@@ -34,7 +39,7 @@ ul.horizontal li a:hover:not(.active) {
 }
 
 ul.horizontal li a.active {
-    background-color: #97C30A;
+    background-color: #F827F6;   /* optionable other color I liked #1FBED6 */
 }
 
 ul.horizontal2 {
@@ -70,33 +75,33 @@ ul.horizontal2 a.active {
 /* Following main header styling */
 .cntctHdr2 {
   width:100%;
-   max-width: 400px;
+   max-width: 900px;
    margin: 0px auto;
-   margin-top: 82px;
+   margin-top: 25px;
 }
 
 .cntctHdr2 {
   text-align: center;
   color: #DDECEF;
-  background-color: #BC4676;
-  border: 6px groove #1FBED6;
-  max-width: 400px;
-  text-shadow: 2px 2px #1FBED6;
+  background-color: blue;
+  border: 6px groove #F827F6;
+  max-width: 900px;
+  text-shadow: 1.5px 1px #F827F6;
   }
 
 /* Following is styling for Contact card */
 .card {
   background-color: white;
-  backgroundwidth: max 500px;
+  backgroundwidth: max 900px;
   width:100%;
-   max-width: 400px;
+   max-width: 900px;
    margin: 0px auto;
    margin-top: 1px;
 
  }
 
  .card:hover {
-   border-color: #BC4676;
+   border-color: #F827F6;
  }
 }
 
@@ -143,7 +148,8 @@ a.waves-effect, a.waves-light {
 }
 .btn-primary {
     color: #fff;
-    background-color: #1FBED6 !important;
+    background-color: blue !important;
+    text-shadow: 1.5px 1px #F827F6;
 }
 
 a.btn:not([href]):not([tabindex]), a.btn:not([href]):not([tabindex]):focus, a.btn:not([href]):not([tabindex]):hover {
@@ -215,4 +221,8 @@ a {
 }
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+.copyright {
+  margin-top: 25px;
 }

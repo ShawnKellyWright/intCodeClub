@@ -1,11 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 /* Following is background image 12-25-19 8:44pm sw */
 body {
-  background: url('../images/int.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #E5E6EB;
+ background-image: url("../images/blueCrystal.jpg");
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-color: #ffffff;
 }
 
 /* Following is nav menu styling 12-24-19 12:45pm sw */
@@ -34,7 +39,7 @@ ul.horizontal li a:hover:not(.active) {
 }
 
 ul.horizontal li a.active {
-  background-color: #97C30A;
+  background-color: #F827F6;   /* optionable other color I liked #1FBED6 */
 }
 
 ul.horizontal2 {

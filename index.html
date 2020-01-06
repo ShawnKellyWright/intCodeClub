@@ -4,30 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="inCodeClub" content="Free international code club">
-  <meta name="shawnCodeWright" content="Shawn Wright's Co-Founder of inCodeClub"
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="intCodeClub" content="Free international code club">
+  <meta name="shawnCodeWright" content="Shawn Wright's Co-Founder of inCodeClub" <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+
   <title>intCodeClub</title>
+
+  <!-- Following is Script section - linking jQuery & bootstrap -->
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+    setInterval(function(){
+    $('#carousel ul').animate({marginLeft:'-600px'},2000,function(){
+
+    $(this).find("li:last").after($(this).find("li:first"));
+    $(this).css({marginLeft:0});
+
+    });
+    },4000);
+    });
+  </script>
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="header" style="text-align: center">
-      International Code Club
+
+  <!-- Following is nav menu 12-19-19 sw -->
+  <nav>
+    <ul class="horizontal">
+      <li><a class="active" href="javascript:void(0)">Home</a></li>
+      <li><a href="html/about.html">About</a></li>
+      <li><a href="html/services.html">Services</a></li>
+      <li><a href="html/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- following is main header with company full name -->
+  <div class="header" style="text-align: center">
+    intCodeClub
+  </div>
+
+  <!-- Following is Carousel for images -->
+
+      <div id="carousel">
+        <ul class="ct clearfix">
+          <li>
+            <img src="images/austin-skyline.jpg" alt="Austin,TX skyline image">
+          </li>
+          <li>
+            <img src="images/TrkmnstnAshgbt.jpg" alt="Turkmenistan Ashgabat image">
+          </li>
+          <li>
+            <img src="images/TngrMorco1.jpg" alt="Morocco Beach image">
+          </li>
+          <li>
+            <img src="images/hillCountryView.jpg" alt="Austin,TX country view image">
+          </li>
+          <li>
+            <img src="images/trmk1.jpg" alt="Turkmenistan City image">
+          </li>
+          <li>
+            <img src="images/TngrMorco5.jpg" alt="Tanger, Morocco night city image">
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Following is nav menu 12-19-19 sw -->
-    <nav>
-      <ul class="horizontal">
-        <li><a class="active" href="javascript:void(0)">Home</a></li>
-        <li><a href="html/about.html">About</a></li>
-        <li><a href="html/services.html">Services</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- following is main container -->
+  <div class="container">
+    <!-- <div class="header" style="text-align: center">
+      International Code Club
+    </div> -->
+
+    <!-- Following is Carousel for images -->
+    <!-- <div id="main">
+  <div id="carousel">
+    <ul>
+      <li>
+        <img src="images/austin-skyline.jpg" alt="Austin,TX skyline">
+      </li>
+      <li>
+        <img src="images/TrkmnstnAshgbt.jpg" alt="Turkmenistan Ashgabat">
+      </li>
+      <li>
+        <img src="images/TngrMorco1.jpg" alt="Morocco Beach">
+      </li>
+    </ul>
+  </div>
+</div> -->
 
     <!-- Following is Co-Founder info section  -->
     <div class="member">
@@ -48,7 +118,7 @@
       <img class="avatar-img" src="images/Shawn.jpg" />
       <div class=text-wrapper>
         <p class="text-jst"><strong>I was born to Code!</strong><br>
-          I'm a front-end web developer but working on being fullstack web developer.<br>
+          I'm a front-end web developer but working on becoming fullstack web developer.<br>
           I work with <strong>HTML, CSS, JavaScript</strong>.<br>
           My other skills are brief knowledge in: <strong>java, C#, python, php, mysql</strong>.
 
@@ -57,42 +127,43 @@
     </div>
 
     <section>
-      <div class="card">
+      <div class="card mx-auto">
         <h2 class="card-title2">Goals</h2>
         <p>We want to continue to master the process of building web sites, but as a <strong>Fullstack Devolpers</strong> and increase our knowledge, skills and abilities in:</p>
         <ul>
           <li class="skills2">HTML</li>
           <li class="skills3">CSS</li>
           <li class="skills4">JavaScript</li>
-          <li class="skills5">Ruby</li>
+          <li class="skills5">Python</li>
           <li class="skills6">PHP</li>
           <li class="skills7">Java</li>
           <li class="skills8">C#</li>
-          <li class="skills9">Python</li>
-          <li class="skills10">C++</li>
+          <li class="skills9">C++</li>
+          <li class="skills10">Ruby</li>
         </ul>
         <p>We both would like to work with a Start-up or long time Tech company, Designing and Engineering Web Applications as well as always staying current with programming languages.</p>
       </div>
     </section>
   </div>
 
-    <!-- Following is Script section - linking bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript">console.log("Welcome to inCodeClub! If you would like to join send email to intCodeClub@gmail.com");</script>
+  <!-- Following is Script section -->
+  <!-- <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script> -->
+  <script type="text/javascript"> console.log("Welcome to intCodeClub! If you would like to join send email to intCodeClub@gmail.com");</script>
 
 </body>
 
 <!-- Footer section contains social media icons for: Shawn Wright & Vepa Orazov -->
 
-  <footer>
-    <ul class="social" id="css3">  <!-- style="text-align: center" -->
-      <li><a href="http://twitter.com/Kornmeal715" target="_blank"><img src="images/nerd-twitter3.svg" alt="Twitter"><strong>Twitter</strong></a></li>
-      <li><a href="https://stackoverflow.com/users/9776467/shawn-wright" target="_blank"><img src="images/stackovrflowBlue2.svg" alt="Stack Overflow"><strong>StackOvrflow</strong></a></li>
-      <li><a href="https://www.linkedin.com/in/shawn-wright-bb577b162/" target="_blank"><img src="images/linkedin5.svg" alt="Linked in"><strong>LinkedIn</strong></a></li>
-      <li><a href="https://github.com/ShawnKellyWright" target="_blank"><img src="images/Octocat12.svg" alt="Github"><strong>Github</strong></a></li>
-    </ul>
-    <p class="copyright" style="text-align: center"><strong>&copy copyright 2020 inCodeClub</strong></p>
-  </footer>
+<footer>
+  <ul class="social" id="css3">
+    <!-- style="text-align: center" -->
+    <li><a href="http://twitter.com/Kornmeal715" target="_blank"><img src="images/nerd-twitter3.svg" alt="Twitter" style="border-radius: 50%"><strong>Twitter</strong></a></li>
+    <li><a href="https://stackoverflow.com/users/9776467/shawn-wright" target="_blank"><img src="images/stackovrflowBlue2.svg" alt="Stack Overflow"><strong>StackOvrflow</strong></a></li>
+    <li><a href="https://www.linkedin.com/in/shawn-wright-bb577b162/" target="_blank"><img src="images/linkedin5.svg" alt="Linked in"><strong>LinkedIn</strong></a></li>
+    <li><a href="https://github.com/ShawnKellyWright" target="_blank"><img src="images/Octocat12.svg" alt="Github"><strong>Github</strong></a></li>
+  </ul>
+  <p class="copyright" style="text-align: center"><strong>&copy copyright 2020 intCodeClub</strong></p>
+</footer>
 
 </html>

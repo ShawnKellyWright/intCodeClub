@@ -1,12 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 /* Following styling for background */
 body {
-  background: url('../images/tealgray_bckgrnd.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #E5E6EB;
+  /* Location of the image */
+ background-image: url("../images/blueCrystal.jpg");
+
+ /* Background image is centered vertically and horizontally at all times */
+ background-position: center center;
+
+ /* Background image doesn't tile */
+ background-repeat: no-repeat;
+
+ /* Background image is fixed in the viewport so that it doesn't move when
+    the content's height is greater than the image's height */
+ background-attachment: fixed;
+
+ /* This is what makes the background image rescale based
+    on the container's size */
+ background-size: cover;
+
+ /* background color displayed while background image is loading */
+ background-color: #ffffff;
 }
+
 
 /* Following is nav menu styling 12-24-19 12:45pm sw */
 ul.horizontal {
@@ -35,7 +54,7 @@ ul.horizontal li a:hover:not(.active) {
 }
 
 ul.horizontal li a.active {
-    background-color: #1FBED6;
+background-color: #F827F6;   /* optionable other color I liked #1FBED6 */
 }
 
 ul.horizontal2 {
@@ -66,19 +85,4 @@ ul.horizontal2 li a:hover:not(.active) {
 ul.horizontal2 a.active {
     color: white;
     background-color: #0AF6FB;
-}
-
-/* Styling for Austin, Tx  */
-.astnSW {
-  margin-top: auto;
-}
-
-/* Following is styling for Turkmenistan Ashgabat image */
-.trkmnstnAshgbt {
-  float: right;
-  margin-top: auto;
-}
-
-.trkmkstn {
-  margin-bottom: auto;
 }

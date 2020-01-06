@@ -1,40 +1,86 @@
-/* Following Background picture and styling */
-.container {
-  background-image: url(../images/absrtk_bckgrd.jpg);
-  background-size: 94%;
-  background-attachment: fixed;
-  border: 1px solid black;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.member {
-  display: block;
+body {
+  /* Location of the image */
+ background-image: url("../images/blueCrystal.jpg");
+
+ /* Background image is centered vertically and horizontally at all times */
+ background-position: center center;
+
+ /* Background image doesn't tile */
+ background-repeat: no-repeat;
+
+ /* Background image is fixed in the viewport so that it doesn't move when
+    the content's height is greater than the image's height */
+ background-attachment: fixed;
+
+ /* This is what makes the background image rescale based
+    on the container's size */
+ background-size: cover;
+
+ /* background color displayed while background image is loading */
+ background-color: #ffffff;
+}
+
+/* Following styles index.html image carousel */
+#main {
+  margin: 150px auto;
+  padding: 10px;
+  box-shadow: 0 0 22px #000;
+}
+
+#carousel {
+  max-width:600px;
+  height:300px;
+  margin:0 auto;
+  overflow:hidden;
+  position:relative;
+}
+
+.ct {
   position: relative;
-  margin-top: 40px;
 }
 
+.ct img {
+  width: 980px;
+  height: 400px;
+}
+
+.ct li {
+  float: left;
+}
+
+#carousel ul li img {
+  width: 600px;
+  height: 300px;
+}
+
+/* following is styling for main header */
 .header {
   display: block;
   position: relative;
-  line-height: 120px;
+  line-height: 75px;
   background: blue;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 2px 2px #F827F6; 
+  text-shadow: 1.5px 1px #F827F6;
   font-size: 35px;
   font-weight: 800;
-  border-bottom: 4px solid white;
-  border-right: 4px solid white;
-  border-radius: 6px;
+  border-bottom: 4px solid #F827F6;
+  max-height: 75px;
 }
 
 .header:hover {
   border-color: #ff99ff;
 }
 
-/* below is nav menu styling 12-24-19 12pm sw */
+/* following is nav menu styling 12-24-19 12pm sw */
 ul.horizontal {
   list-style-type: none;
   margin: 0;
+  margin-top: auto;
   padding: 0;
   overflow: hidden;
   background-color: #333;
@@ -91,6 +137,12 @@ ul.horizontal2 a.active {
 }
 
 /* Following responsive avatars */
+.member {
+  display: block;
+  position: relative;
+  margin-top: 75px;
+}
+
 .avatar-img {
   display: block;
   position: relative;
@@ -112,12 +164,12 @@ ul.horizontal2 a.active {
   background: #ffffff;
   padding: 15px 0;
   border-top-left-radius: 25px;
-  border-bottom: 4px solid #05BD22;
+  border-bottom: 4px solid blue;
   border-radius: 6px;
 }
 
 .text-wrapper:hover {
-  border-color: #ff99ff;
+  border-color: #F827F6;
 }
 
 .text-jst {
@@ -136,12 +188,12 @@ ul.horizontal2 a.active {
 
 /* The following portion styles Goal card with skills */
 .card {
-  margin: 30px;
+  margin-top: 75px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 670px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #05BD22;
+  border-bottom: 4px solid blue;
   border-radius: 6px;
 }
 
@@ -154,12 +206,11 @@ ul.skills {
   text-align: center;
 }
 
-/* Following li elements (skills2-skills10) styled in the
- DC Comics Green Lantern + all other Lanterns colors */
+/* Following li elements styled in the DC Comics Green Lantern + all other Lantern colors */
 .skills2 {
   border-radius: 6px;
   display: inline-block;
-  background: #008000;
+  background: #F21508;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -186,7 +237,7 @@ ul.skills {
 .skills5 {
   border-radius: 6px;
   display: inline-block;
-  background: #F21508;
+  background: #008000;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -237,17 +288,20 @@ ul.skills {
   margin: 2px;
 }
 
-/* Following is styling for custom svg's for each Co-Founder's, so far only mine. */
+/* Following is styling for social media custom svg's for each Co-Founder's, so far only SW */
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  margin-top: 25px;
 }
 
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  /* background-color: #ffffff;
+  border-radius: 6px; */
 }
 
 footer ul li {
@@ -303,6 +357,8 @@ footer ul li {
   -webkit-transition-duration: 500ms;
   -moz-transition-property: opacity;
   -moz-transition-duration: 500ms;
+  -o-transition-property: opacity;
+  -o-transition-duration: 500ms;
 }
 
 #css3 li a strong {
@@ -311,6 +367,8 @@ footer ul li {
   -webkit-transition-duration: 300ms;
   -moz-transition-property: opacity, top;
   -moz-transition-duration: 300ms;
+  -o-transition-property: opacity, top;
+  -o-transition-duration: 300ms;
 }
 
 #css3 li:hover {
@@ -320,4 +378,8 @@ footer ul li {
 #css3 li:hover a strong {
   opacity: 1;
   top: -10px;
+}
+
+.copyright {
+  margin-top: 20px;
 }
