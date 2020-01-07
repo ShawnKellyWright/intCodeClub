@@ -49,7 +49,7 @@ ul.horizontal li a {
     text-decoration: none;
 }
 
-ul.horizontal li a:hover {
+ul.horizontal li a:hover:not(.active) {
     background-color: blue;
 }
 
