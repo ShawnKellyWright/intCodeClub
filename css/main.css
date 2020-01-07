@@ -99,7 +99,7 @@ ul.horizontal li a {
 }
 
 ul.horizontal li a:hover:not(.active) {
-  background-color: #000;
+  background-color: blue;
 }
 
 ul.horizontal li a.active {
@@ -382,4 +382,5 @@ footer ul li {
 
 .copyright {
   margin-top: 20px;
+  color: #ffffff;
 }
