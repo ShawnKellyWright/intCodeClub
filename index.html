@@ -7,6 +7,7 @@
   <meta name="intCodeClub" content="Free international code club">
   <meta name="shawnCodeWright" content="Shawn Wright's Co-Founder of inCodeClub" <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <!-- Following is css links -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
 
@@ -17,16 +18,20 @@
   <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 
   <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function() {
 
-    setInterval(function(){
-    $('#carousel ul').animate({marginLeft:'-600px'},2000,function(){
+      setInterval(function() {
+        $('#carousel ul').animate({
+          marginLeft: '-600px'
+        }, 2000, function() {
 
-    $(this).find("li:last").after($(this).find("li:first"));
-    $(this).css({marginLeft:0});
+          $(this).find("li:last").after($(this).find("li:first"));
+          $(this).css({
+            marginLeft: 0
+          });
 
-    });
-    },4000);
+        });
+      }, 4000);
     });
   </script>
 
@@ -127,7 +132,9 @@
   <!-- Following is Script section -->
   <!-- <script type="text/javascript" src="scripts/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/bootstrap.min.js"></script> -->
-  <script type="text/javascript"> console.log("Welcome to intCodeClub! If you would like to join send email to intCodeClub@gmail.com");</script>
+  <script type="text/javascript">
+    console.log("Welcome to intCodeClub! If you would like to join send email to intCodeClub@gmail.com");
+  </script>
 
 </body>
 
