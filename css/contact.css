@@ -1,6 +1,6 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 /* following is background image */
@@ -92,7 +92,7 @@ ul.horizontal2 a.active {
 /* Following is styling for Contact card */
 .card {
   background-color: white;
-  backgroundwidth: max 900px;
+  background-size: 900px;
   width:100%;
    max-width: 900px;
    margin: 0px auto;
@@ -103,7 +103,6 @@ ul.horizontal2 a.active {
  .card:hover {
    border-color: #F827F6;
  }
-}
 
 .card-body {
     padding-top: 1.5rem;
