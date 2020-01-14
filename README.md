@@ -5,11 +5,7 @@ This is done by taking on volunteer projects with the purpose of building Web an
 small companies. 
 
 Thanks, 
-Shawn Wright - Co-Founder 
+Shawn Wright 
 (United States)
 
-Vepa Orazov - Co-Founder 
-(Turkmenistan) 
 
-Aymane Boukrouh -
-(Morroco)
